@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    stages {
+        stage('Clone Repository') {
+            steps {
+                // Clone the repository
+                checkout scm
+            }
+        }
+        stage('Display File') {
+            steps {
+                script {
+                    // Read the file content
+                    def fileContent = readFile 'example.txt'
+                    // Output the content to the console
+                    echo fileContent
+                }
+            }
+        }
+    }
+}
