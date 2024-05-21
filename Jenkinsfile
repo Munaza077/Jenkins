@@ -10,6 +10,7 @@ pipeline {
             steps {
                 echo 'Allication test stage' 
                 echo 'Allication test stage'
+                 echo 'Allication test stage'
         }
         }
         stage('Run') {
