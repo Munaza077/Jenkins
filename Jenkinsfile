@@ -25,3 +25,4 @@ pipeline {
         }
     }
 }
+sh'gcloud compute zones list'
