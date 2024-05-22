@@ -10,6 +10,7 @@ pipeline {
             steps {
                 echo 'Application build stage...' 
                 sh 'javac program.java'
+                  sh 'javac program.java'
         }
        }
         stage('Test') {
